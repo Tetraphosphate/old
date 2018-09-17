@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: /old
+Disallow: /Sad Trombone Website!
+Disallow: /older
+Disallow: /original
