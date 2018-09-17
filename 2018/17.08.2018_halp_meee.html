@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Halp Meee</title>
+    <link rel="icon" src="new.ico">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/resources/code/css/new.css">
+    <style>
+    
+      * {
+        font-family: Inconsolata;
+      }
+    
+    </style>
+    <script>
+    
+      var task;
+      var tasks = ["Acids and Bases", "Genetics", "English Internal", "Wave Behaviour", "Flowering Plants", "Latin", "Algebra", "Tables, Equations and Graphs"];
+      function generateTask() {
+        var taskNumber = Math.floor(Math.random() * tasks.length);
+        task = tasks[taskNumber];
+        console.log(taskNumber + " " + task)
+        return task;
+      }
+    
+    </script>
+  </head>
+  <body>
+  
+    <h1>I reckon it's time I revised for my derived grades</h1>
+    <h2>How 'bout we start studying?</h2>
+    <h3>What should we study??</h3>
+    <h4>Click the button to get a task</h4>
+    <button onClick="document.getElementById('answer').innerHTML = generateTask();">Pick a task!</button>
+    <h5>Task: <span id="answer"></span></h5>
+    <h6>Go now and do your task</h6>
+    <p>The one thing that de-stresses me is trombones and I'm weird</p>
+    
+  </body>
+</html>

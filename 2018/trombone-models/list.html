@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>List of trombone models</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A list of trombone models and their specs (including bell material, bore, model name, etc).">
+  <link rel="icon" href="../new.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+  <h1 class="pagetitle">List of trombone models</h1>
+  <p id="description">Press CTRL+F (Command + F on mac) to search this list. This is, of course, not a complete list. Please contact me if you find any errors, or if you have trombones to add to this list, or if you have any suggestions to improve readability/add columns/etc. (contact details at bottom of page).</p>
+  </header>
+  
+  <main>
+    <table id="trombone-table">
+    
+      <tr id="table-heading">
+        <th onclick="sortTable(0)">Model</th>
+        <th onclick="sortTable(1)">Brand</th>
+        <th onclick="sortTable(2)">Level</th>
+        <th onclick="sortTable(2)">Type</th> <!-- e.g. bass, tenor, alto, etc -->
+        <th onclick="sortTable(3)">Bore</th>
+        <th onclick="sortTable(4)">Inner Slides</th>
+        <th onclick="sortTable(5)">Outer Slide</th>
+        
+        <th onclick="sortTable(6)">Bell Diameter</th>
+        <th onclick="sortTable(7)">Bell Material</th>
+        <th onclick="sortTable(8)">Leadpipe</th> <!-- interchangeable or no -->
+        <th onclick="sortTable(9)">Finish</th> <!-- silver plate, clear lacquer, etc -->
+        <th onclick="sortTable(10)">Attachment(s)</th> <!-- none, F, F/Gb dependent, F/Gb independent, etc -->
+        <th onclick="sortTable(11)">Attachment Wrap</th>
+        <th onclick="sortTable(13)">Other Details</th>
+      </tr>
+      
+      <tr><td>YSL-154</td><td>Yamaha</td><td>student</td><td>tenor</td><td>.500</td><td>nickel silver</td><td>yellow brass</td>
+        <td>8"</td><td>yellow brass</td><td>¯\_(ツ)_/¯</td><td>gold lacquer</td><td>none</td><td>N/A</td><td>-</td></tr>
+      
+      <tr><td>YSL-154s</td><td>Yamaha</td><td>student</td><td>tenor</td><td>.500</td><td>nickel silver</td><td>yellow brass</td>
+        <td>8"</td><td>yellow brass</td><td>¯\_(ツ)_/¯</td><td>silver plate</td><td>none</td><td>N/A</td><td>-</td></tr>
+    
+    </table>
+  </main>
+  
+  <footer id="footer">
+    <p id="author">Website by Janice Chung. Mistakes are also by Janice Chung. All of the data is from the internet. also, i know the layout looks bad. im working on it :P</p>
+    <p id="contact">Email: janice (dot) c (dot) chung (at) gmail (dot) com | Trombone Chat: <a href="https://trombonechat.com/memberlist.php?mode=viewprofile&u=3663">Tetraphosphate</a></p>
+  </footer>
+
+</body>
+
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("trombone-table");
+  switching = true;
+  // Set the sorting direction to ascending:
+  dir = "asc"; 
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /* Loop through all table rows (except the
+    first, which contains table headers): */
+    for (i = 1; i < (rows.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /* Check if the two rows should switch place,
+      based on the direction, asc or desc: */
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      // Each time a switch is done, increase this count by 1:
+      switchcount ++; 
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+</html>

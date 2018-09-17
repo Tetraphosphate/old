@@ -1,0 +1,25 @@
+:root {
+	/* https://coolors.co/333333-ffffff-f04937-e4b47b-000000 */
+	--title-font: "Inconsolata", monospace;
+	--body-font: "Montserrat", sans-serif;
+	
+	--dark-grey: #333333;
+	--dull-brass: #e4b47b;
+	--pink-red: #f04937;
+	--black: #000000;
+	--white: #ffffff;
+}
+
+* {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--title-font);
+	color: var(--pink-red);
+}
+
+p, div {
+	font-family: var(--body-font);
+	color: var(--black);
+}
