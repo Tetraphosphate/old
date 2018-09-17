@@ -1,0 +1,29 @@
+// Colour template: https://coolors.co/ffffff-eadd80-333333-432400-366124
+// CSS selectors: https://www.w3schools.com/cssref/css_selectors.asp
+
+
+body {background-color: rgb(220, 219, 216);}
+* {font-family: Inconsolata, monospace; font-weight: bold;}
+
+
+footer { position: fixed; bottom: 0; text-align: center; width: 100%; background-color: rgb(228, 180, 123);}
+.in-footer {margin-top: 5px; margin-bottom: 5px;}
+
+
+.page-title {font-size: 40px; color: #f04937;}
+
+h1 { font-weight: bold; font-family: Inconsolata, monospace; color: #f04937;}
+p {font-weight: bold; font-family: Inconsolata, monospace; font-size: 1em;}
+
+button {background-color: transparent; border-color: transparent;}
+
+// Links:
+p, a .footer-link {color: #432400; text-decoration: underline;}
+p, a .footer-link:hover {color: white; text-decoration:none;}
+p, a .footer-link:visited {color: #432400; text-decoration: underline;}
+p, a .footer-link:visited:hover {color: white; text-decoration none;}
+
+p, a .link {color: #f04937; text-decoration: underline;}
+p, a .link:hover {color: black; text-decoration: none;}
+p, a .link:visited {color: #f04937; text-decoration: none;}
+p, a .link:visited:hover {color: black; text-decoration: none;}

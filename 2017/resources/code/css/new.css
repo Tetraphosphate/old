@@ -1,0 +1,56 @@
+button {background-color: transparent; border-color: transparent;}
+
+// https://coolors.co/ffffff-eadd80-333333-432400-366124
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(228, 180, 123);
+}
+
+.infooter u {color: #432400;}
+.infooter a:link { color: #432400;}
+.infooter a:visited { color: #432400;}
+.infooter a:hover {color: white; text-decoration: none;}
+.infooter a:visited:hover {color: white; text-decoration: none;}
+.infooter u:hover {color: white;}
+.infooter {margin-top: 5px; margin-bottom: 5px;}
+
+.everything {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    background-color: white;
+    color: #333333;
+}
+
+.below {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    background-color: white;
+    color: #333333;
+}
+
+.pagetitle {font-size: 40px; color: #f04937;}
+
+* {font-weight: bold; font-family: monospace;}
+
+u {color: #f04937; text-decoration: underline;}
+u:hover {color: black; text-decoration: none;}
+a:link {color: #f04937; text-decoration: underline;}
+a:hover {color: black; text-decoration: none;}
+a:visited {color: #f04937; text-decoration: none;}
+a:visited:hover {color: black; text-decoration: none;}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Night Mode Button</title>
+<link rel="icon" href="" />
+<link rel="stylesheet" type="text/css" href="inspector-stylesheet.css">
+<link rel='shortcut icon' href='new.ico' type='image/x-icon'/ >
+
+<style type="text/css"></style></head>
+<body>
+  <div id='mydiv'>
+  <br><br>
+  <h3>Night Mode Button</h3>
+  <style>
+    #togBut {border: 2px solid white; border-radius: 25px; background: #8296DF;padding: 5px;}
+    #togBut:hover {background: black; color: white;}
+  </style>
+  <script>
+    function toggleNightMode() {
+  var color = document.getElementByClass('night').style.color;
+    
+  var backgroundColor = document.getElementByClass('night').style.backgroundColor;
+  
+    
+  if (color == "black" && backgroundColor == "white") {
+        document.getElementByClass('night').style.color="white";
+        document.getElementByClass('night').style.backgroundColor="black";
+        document.getElementByClass('night').style.fontFamily="Arial";
+        
+    } else {
+        document.getElementByClass('night').style.color="black";
+        document.getElementByClass('night').style.backgroundColor="white";
+        document.getElementByClass('night').style.fontFamily="Times New Roman";
+    }
+}
+  </script>
+  <button onClick = "toggleNightMode()" id= togBut>Toggle Night Mode</button>
+  </div>
+
+<p style="text-align: center; font-size: 11px"><u>Blank</u> | <u>Site made by Janice</u> | <u>Created: 3/8/17</u> | <u>Read more at </u><a href="www.awesome-shiny-trombone.blogspot.co.nz">www.awesome-shiny-trombone.blogspot.co.nz</a> | <a href="index.html">Sad Trombone Hub</a> | <a href="#top">Top</a> | <a href="">Previous</a> | <a href="">Next</a></p>
+</body></html>
