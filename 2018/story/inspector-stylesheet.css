@@ -2,6 +2,10 @@
     width: 100%;
 }
 
+.dontshow {
+    display: none;
+}
+
 * {
     margin: 0;
     padding: 0;
