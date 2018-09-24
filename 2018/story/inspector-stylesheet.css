@@ -10,6 +10,7 @@ html, body {
 .parallax {
     background-image: url("../../perm-resources/images/m33.jpg");
     background-attachment: fixed;
+    background-size: cover;
 }
 
 button {
