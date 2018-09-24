@@ -93,7 +93,7 @@ u:hover {
     text-decoration: none;
 }
 
-a {
+a, span, em {
     display: inline;}
 
 a:link {
