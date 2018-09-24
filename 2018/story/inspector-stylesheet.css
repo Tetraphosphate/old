@@ -2,10 +2,16 @@
     width: 100%;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 .parallax {
     background-size: cover;
     background-image: url("../../perm-resources/images/m33.jpg");
     background-attachment: fixed;
+    height: 800px;
 }
 
 button {
