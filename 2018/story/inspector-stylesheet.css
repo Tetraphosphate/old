@@ -11,7 +11,6 @@ html, body {
     background-size: cover;
     background-image: url("../../perm-resources/images/m33.jpg");
     background-attachment: fixed;
-    height: 800px;
 }
 
 button {
@@ -53,6 +52,7 @@ p {
     font-weight: bold;
     font-family: monospace;
     font-size: 20px;
+    color: black;
 }
 
 h3 {
