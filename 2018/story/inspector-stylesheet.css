@@ -9,9 +9,6 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-div {
     display: block;
 }
 
@@ -82,6 +79,7 @@ span {
 u {
     color: #f04937;
     text-decoration: underline;
+    display: inline;
 }
 
 div {
@@ -94,6 +92,9 @@ u:hover {
     color: black;
     text-decoration: none;
 }
+
+a {
+    display: inline;}
 
 a:link {
     color: #f04937;
