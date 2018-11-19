@@ -1,0 +1,132 @@
+https://www.hexrpg.com/profile/Tetraphosphate
+
+<body>
+  <style>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata|Montserrat' rel='stylesheet'>
+button {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+// https://coolors.co/ffffff-eadd80-333333-432400-366124
+
+body {
+    background-color: rgb(220, 219, 216);
+    font-family: monospace;
+    height: 100%;
+    margin-top: 7vh;
+    margin-bottom: 10vh;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+}
+
+.infooter u {color: #432400;}
+.infooter a:link {color: #432400;}
+.infooter a:visited {color: #432400;}
+.infooter a:hover {color: white; text-decoration: none;}
+.infooter a:visited:hover {color: white; text-decoration: none;}
+.infooter u:hover {color: white;}
+.infooter {margin-top: 5px;margin-bottom: 5px;}
+
+.everything {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    background-color: white;
+    color: #333333;
+}
+
+.below {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    background-color: white;
+    color: #333333;
+}
+
+.pagetitle {
+    font-size: 40px;
+    color: #f04937;
+}
+
+* {
+    font-family: inconsolata, monospace;
+    font-weight: bold;
+}
+
+u {
+    color: #f04937;
+    text-decoration: underline;
+}
+
+u:hover {
+    color: black;
+    text-decoration: none;
+}
+
+a:link {
+    color: #f04937;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #f04937;
+    text-decoration: none;
+}
+
+a:visited:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.green {
+    color: #2f9b2b;
+}
+  </style>
+
+
+
+  <div class="everything">
+    <header>
+<img src="https://cdn.discordapp.com/attachments/441936629817409537/507731829986426891/space_bass_bone_small.png" style="border-radius: 15px; width: 200px;">
+<br>
+      <h1 style="color: #f04937">Tetraphosphate</h1>
+    </header>
+    <div class="paragraph">
+     <ul>
+          <li>Name: Janice</li>
+          <li>House: <span class="green">Slytherin</span></li>
+          <li>Fav animal: snake (of course)</li>
+          <li>Fav food: pepper (it makes everything taste better</li>
+          <li>Fav colour: <span style="color: #f04937">#f04937</span></li>
+          <li>Fav Harry Potter characters: <span style="color: #55968a">Grindelwald</span>, <span class="green">Regulus Black</span>, and <span class="green">Snape</span></li>
+          <li>Fav things to do: play <span style="background-color: #e4b47b; color: 432400">trombone</span> (I love trombone)
+     </ul>
+   </div>
+  </div>
+</body>
+  <footer>
+<p class="infooter"><u>Profile</u> | <u>Page made by myself (Janice)</u> | <u>Created: 19/11/18</u> | <u>Updated: 19/11/18</u> | <a href="https://github.com/Tetraphosphate">My Github</a> | <a href="#top">Back to Top</a></p>
+  </footer>
+</html>
