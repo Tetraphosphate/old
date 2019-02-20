@@ -8,14 +8,14 @@
 .page {
   width: 70vw;
   display: inline-block;
-  
+  text-align: left;
 }
 
 img {
   width: 50vw;
 }
 
-.body {
+body {
   text-align: center;
   font-family: Inconsolata, monospace;
 }
