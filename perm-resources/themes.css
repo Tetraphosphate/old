@@ -11,6 +11,10 @@
   text-align: left;
 }
 
+img {
+  width: 50vw;
+}
+
 .body {
   text-align: center;
   font-family: Inconsolata, monospace;
