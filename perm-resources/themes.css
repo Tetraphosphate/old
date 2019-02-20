@@ -1,1 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 70vw;
+  display: inline-block;
+  text-align: left;
+}
+
+.body {
+  text-align: center;
+  font-family: Inconsolata, monospace;
+}
+
+.audiobutton {
+  background-color: transparent;
+  border-color: transparent;
+}
