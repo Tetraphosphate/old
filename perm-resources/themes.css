@@ -20,3 +20,17 @@
   background-color: transparent;
   border-color: transparent;
 }
+
+.infooter {
+  background-color: #E4B47B;
+  color: #432400;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
