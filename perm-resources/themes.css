@@ -5,6 +5,14 @@
   padding: 0;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
 .page {
   margin-top: 10vw;
   margin-bottom: 4vw;
