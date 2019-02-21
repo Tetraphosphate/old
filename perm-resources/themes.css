@@ -10,7 +10,7 @@
   text-decoration: underline;
 }
 
-.fakelink:hover, a:hover, a:visited:hover, .fakelink a:visited:hover {
+.fakelink:hover, a:hover, a:visited:hover, .infooter a:visited:hover {
   color: black;
   text-decoration: none;
 }
