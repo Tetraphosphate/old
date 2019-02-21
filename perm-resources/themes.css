@@ -15,7 +15,7 @@
   text-decoration: none;
 }
 
-.infooter .fakelink {
+.infooter .fakelink, .infooter a {
   color: #432400;
 }
 
