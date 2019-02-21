@@ -24,6 +24,11 @@
   text-decoration: none;
 }
 
+.infooter a:visited {
+  color: #432400;
+  text-decoration: none;
+}
+
 a:visited {
   color: #f04937;
   text-decoration: none;
