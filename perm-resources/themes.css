@@ -15,6 +15,10 @@
   text-decoration: none;
 }
 
+.infooter .fakelink {
+  color: #432400;
+}
+
 a:visited {
   color: #f04937;
   text-decoration: none;
@@ -43,7 +47,6 @@ body {
 
 .infooter {
   background-color: #E4B47B;
-  color: #432400;
   font-weight: bold;
   padding-top: 5px;
   padding-bottom: 5px;
