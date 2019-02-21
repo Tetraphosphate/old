@@ -5,12 +5,12 @@
   padding: 0;
 }
 
-.faketext, a {
+.fakelink, a {
   color: #f04937;
   text-decoration: underline;
 }
 
-.faketext:hover, a:hover, a:visited:hover {
+.fakelink:hover, a:hover, a:visited:hover {
   color: black;
   text-decoration: none;
 }
