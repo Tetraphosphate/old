@@ -5,6 +5,17 @@
   padding: 0;
 }
 
+.page {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+h1 {
+  color: #f04937;
+  font-size: 3em;
+  margin-bottom:  2vw;
+}
+
 .fakelink, a {
   color: #f04937;
   text-decoration: underline;
