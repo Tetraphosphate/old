@@ -13,6 +13,10 @@
   color: #f04937;
 }
 
+.blue-fill {
+  background-color: #1282A2;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -81,15 +85,19 @@ a:visited {
 }
 
 .section {
-  width: 60vw;
-  padding-right: 20vw;
-  padding-left: 20vw;
+  width: 60%;
+  padding-right: 20%;
+  padding-left: 20%;
+  margin-left: 0;
+  text-align: left;
+  background-color: red;
+  margin-right: 0;
+  margin-top: 0;
 }
 
 .page {
-  width: 100vw;
+  width: 100%;
   display: inline-block;
-  text-align: left;
 }
 
 img {
