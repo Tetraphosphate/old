@@ -13,8 +13,12 @@
   color: #f04937;
 }
 
-.blue-fill {
-  background-color: #1282A2;
+.white {
+  color: #ffffff;
+}
+
+.dark-blue-fill {
+  background-color: #102740;
 }
 
 .bold {
