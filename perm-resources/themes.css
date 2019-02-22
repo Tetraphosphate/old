@@ -80,8 +80,14 @@ a:visited {
 
 }
 
-.page {
+.section {
   width: 60vw;
+  padding-right: 20vw;
+  padding-left: 20vw;
+}
+
+.page {
+  width: 100vw;
   display: inline-block;
   text-align: left;
 }
