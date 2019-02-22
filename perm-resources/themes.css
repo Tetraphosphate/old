@@ -5,30 +5,30 @@
   padding: 0;
 }
 
-div.dark-blue-fill {
+.parallax {
   padding-top: 5vw;
   padding-bottom: 5vw;
+  background-attachment: fixed;
 }
 
-.dark-blue-fill > p, .dark-blue-fill > h3 {
+pink-highlight {
   background-color: #f0493733;
 }
 
-.grey {
+.grey-text {
   color: #999999;
 }
 
-.pink {
+.pink-text {
   color: #f04937;
 }
 
-.white {
+.white-text {
   color: #ffffff;
 }
 
-.dark-blue-fill {
+.space-background {
   background-image: url("../../../../perm-resources/images/m33.jpg");
-  background-attachment: fixed;
   background-position: top;
 }
 
