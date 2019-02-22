@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+div.dark-blue-fill {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
 .dark-blue-fill > p, .dark-blue-fill > h3 {
   background-color: #f0493733;
 }
