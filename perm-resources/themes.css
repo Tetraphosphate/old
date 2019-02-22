@@ -82,8 +82,28 @@ img {
   width: 60vw;
 }
 
-.half-width-image {
+.width-10 {
+  width: 10vw;
+}
+
+.width-20 {
+  width: 20vw;
+}
+
+.width-30 {
   width: 30vw;
+}
+
+.width-40 {
+  width: 40vw;
+}
+
+.width-50 {
+  width: 50vw;
+}
+
+.width-60 {
+  width: 60vw;
 }
 
 body {
