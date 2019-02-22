@@ -54,10 +54,12 @@ h3 {
 p {
   font-size: 1em;
   margin-bottom: 1vw;
+  display: inline-block
 }
 
 .infooter {
   margin: 0;
+  width: 100%
 }
 
 .fakelink, a {
