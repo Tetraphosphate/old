@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+.grey {
+  color: #757575;
+}
+
 .bold {
   font-weight: bold;
 }
