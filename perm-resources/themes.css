@@ -5,8 +5,12 @@
   padding: 0;
 }
 
+.dark-blue-fill > p, .dark-blue-fill > h3 {
+  background-color: #f0493733;
+}
+
 .grey {
-  color: #757575;
+  color: #999999;
 }
 
 .pink {
@@ -18,7 +22,9 @@
 }
 
 .dark-blue-fill {
-  background-color: #102740;
+  background-image: url("../../../../perm-resources/images/m33.jpg");
+  background-attachment: fixed;
+  background-position: top;
 }
 
 .bold {
@@ -27,14 +33,6 @@
 
 .italic {
   font-style: italic;
-}
-
-.page {
-  
-}
-
-.section {
-  
 }
 
 h1 {
