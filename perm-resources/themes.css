@@ -9,6 +9,7 @@
   padding-top: 5vw;
   padding-bottom: 5vw;
   background-attachment: fixed;
+  background-position: top;
 }
 
 .pink-highlight {
@@ -29,7 +30,10 @@
 
 .space-background {
   background-image: url("../../../../perm-resources/images/m33.jpg");
-  background-position: top;
+}
+
+.wood-background {
+  background-image: url("../../../../perm-resources/images/wood.jpg");
 }
 
 .bold {
