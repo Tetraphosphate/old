@@ -112,6 +112,7 @@ a:visited {
   .infooter, footer {
     text-align: left;
     position: static;
+    bottom: auto;
   }
 
   p.infooter > u, p.infooter > a {
