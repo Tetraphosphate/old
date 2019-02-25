@@ -50,7 +50,6 @@
 
 h1 {
   color: #f04937;
-  font-size: 3em;
   margin-bottom:  2vw;
 }
 
@@ -99,10 +98,31 @@ a:visited {
 
 }
 
+@media screen and (max-width: 600px) {
+  .section {
+    width: 90%;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  
+  h1 {
+    font-size: 5em;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .section {
+    width: 60%;
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+  
+  h1 {
+    font-size: 3em;
+  }
+}
+
 .section {
-  width: 60%;
-  padding-right: 20%;
-  padding-left: 20%;
   text-align: left;
   margin-left: 0;
   margin-right: 0;
