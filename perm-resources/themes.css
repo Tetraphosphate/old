@@ -111,6 +111,7 @@ a:visited {
   
   .infooter, footer {
     text-align: left;
+    position: inherit;
   }
 
   p.infooter > u, p.infooter > a {
