@@ -98,7 +98,7 @@ a:visited {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .section {
     width: 90%;
     padding-right: 5%;
@@ -126,7 +126,7 @@ a:visited {
   }
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 801px) {
   .section {
     width: 60%;
     padding-right: 20%;
