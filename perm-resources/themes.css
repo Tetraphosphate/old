@@ -50,6 +50,7 @@
 
 h1 {
   color: #f04937;
+  font-size: 3em;
   margin-bottom:  2vw;
 }
 
@@ -98,58 +99,10 @@ a:visited {
 
 }
 
-@media screen and only (max-width: 768px) {
-  .section {
-    width: 90%;
-    padding-right: 5%;
-    padding-left: 5%;
-  }
-  
-  h1 {
-    font-size: 5em;
-  }
-  
-  .infooter, footer {
-    text-align: left;
-    position: static;
-    bottom: auto;
-  }
-
-  p.infooter > u, p.infooter > a {
-    display: block;
-    margin-left: 5vw;
-    margin-top: 5vw;
-    margin-bottom: 5vw
-  }
-
-  .line {
-    display: none;
-  }
-}
-
-@media screen and only (min-width: 769px) {
-  .section {
-    width: 60%;
-    padding-right: 20%;
-    padding-left: 20%;
-  }
-  
-  h1 {
-    font-size: 3em;
-  }
-
-  .infooter, footer {
-    position: fixed;
-    bottom: 0;
-  }
-
-  .line {
-    display: inline
-  }
-
-}
-
 .section {
+  width: 60%;
+  padding-right: 20%;
+  padding-left: 20%;
   text-align: left;
   margin-left: 0;
   margin-right: 0;
