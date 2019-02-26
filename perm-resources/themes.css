@@ -40,6 +40,10 @@
   background-image: url("../../../../perm-resources/images/wood.jpg");
 }
 
+.strike {
+  text-decoration: line-through;
+}
+
 .bold {
   font-weight: bold;
 }
