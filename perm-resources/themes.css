@@ -33,11 +33,11 @@
 }
 
 .space-background {
-  background-image: url("../../../../perm-resources/images/m33.jpg");
+  background-image: url("./images/m33.jpg");
 }
 
 .wood-background {
-  background-image: url("../../../../perm-resources/images/wood.jpg");
+  background-image: url(".images/wood.jpg");
 }
 
 .strike {
