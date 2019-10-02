@@ -4,6 +4,10 @@
     font-family: "Inconsolata", monospace;
 }
 
+.section > .infooter {
+    margin-bottom: 10px;
+}
+
 a, .fakelink {
     color: #f04937;
     text-decoration: underline;
