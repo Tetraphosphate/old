@@ -3,20 +3,26 @@
     padding: 0;
 }
 
+.gallery-wrapper {
+    display: flex;
+}
+
 .gallery {
-    justify-content: center;
+    margin: auto;
+    display: flex;
     flex-flow: row wrap;
+    
 }
 
 .item-wrapper {
     display: inline-flex;
     margin: auto;
     flex-direction: row;
-    justify-content: center;
     width: 300px;
-    background-color: #333333;
     height: 300px;
-    align-content: space-around;
+    border: black 1px dashed;
+    border-radius: 5px;
+    justify-content: space-evenly;
 }
 
 img.picture {
