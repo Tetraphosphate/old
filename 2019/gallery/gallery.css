@@ -48,15 +48,15 @@ p {
 .page {
     display: flex;
     flex-flow: column;
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 7%;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .section {
     margin: auto;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .gallery-wrapper {
