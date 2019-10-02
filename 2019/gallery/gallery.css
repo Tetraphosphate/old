@@ -5,27 +5,34 @@
 
 .gallery-wrapper {
     display: flex;
+    margin: 100px;
+    align-cont
 }
 
 .gallery {
     margin: auto;
     display: flex;
     flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
     
 }
 
 .item-wrapper {
-    display: inline-flex;
+    display: flex;
     margin: auto;
-    flex-direction: row;
+    justify-content: flex-start;
+    align-content: space-around;
     width: 300px;
     height: 300px;
     border: black 1px dashed;
-    justify-content: space-evenly;
+    padding: 10px;
 }
 
 img.picture {
-    background-color: #6e6e6e;
+    display: block;
+    background-color: #eeeeee;
     max-width: 300px;
     max-height: 300px;
     margin: auto;
