@@ -79,6 +79,7 @@ p {
 
 .gallery-wrapper {
     display: flex;
+    margin-bottom: 10%;
 }
 
 .gallery {
