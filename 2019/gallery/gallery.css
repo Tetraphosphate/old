@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .gallery {
     display: flex;
     flex-direction: row;
@@ -7,6 +12,12 @@
     justify-content: space-evenly;
 }
 
-img .picture {
+.item-wrapper {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+img.picture {
     background-color: #6e6e6e;
 }
