@@ -1,12 +1,25 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Inconsolata", monospace;
+}
+
+.page {
+    display: flex;
+    flex-flow: column;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.section {
+    margin: auto;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .gallery-wrapper {
     display: flex;
-    margin: 100px;
-    align-cont
 }
 
 .gallery {
@@ -16,7 +29,6 @@
     justify-content: flex-start;
     align-content: flex-start;
     flex-direction: row;
-    
 }
 
 .item-wrapper {
@@ -26,13 +38,11 @@
     align-content: space-around;
     width: 300px;
     height: 300px;
-    border: black 1px dashed;
     padding: 10px;
 }
 
 img.picture {
     display: block;
-    background-color: #eeeeee;
     max-width: 300px;
     max-height: 300px;
     margin: auto;
