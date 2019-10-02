@@ -16,6 +16,7 @@
         <div class="section">
             <h1><span class="pink-highlight">Tetraphosphate's Art Gallery</span></h1>
             <p>> Welcome to my collection of pixel art. Hover over an image (or tap if you're on a phone) for more details. I'm working on a search system, but for the meantime you'll just have to scroll through until you find the thing you're looking for.</p>
+            <p><span id="toggle-description" onclick="toggleDescription()">Show Image Descriptions</span></p>
         </div>
         
         <div class="gallery-wrapper">
@@ -28,7 +29,7 @@
                     <div class="tooltip">
                         <h3 class="tooltip-title">Flamethrower Tenor</h3>
                         <p class="tooltip-description">> A firey trombone.</p>
-                        <p class="tooltip-tags"><span class="bold">Tags:</span>
+                        <p class="tooltip-tags">Tags:
                             <span class="tag">tenor-trombone</span>
                             <span class="tag">trombone</span>
                             <span class="tag">brass</span>
@@ -44,7 +45,7 @@
                     <div class="tooltip">
                         <h3 class="tooltip-title">Tenor Trombone</h3>
                         <p class="tooltip-description">> The original trombone sprite.</p>
-                        <p class="tooltip-tags"><span class="bold">Tags:</span> tenor trombone, trombone, brass, yellow brass</p>
+                        <p class="tooltip-tags">Tags: tenor trombone, trombone, brass, yellow brass</p>
                     </div>
                 </div>
                 
@@ -54,7 +55,7 @@
                     <div class="tooltip">
                         <h3 class="tooltip-title">Trumpet</h3>
                         <p class="tooltip-description">> Just your everyday Bb trumpet.</p>
-                        <p class="tooltip-tags"><span class="bold">Tags:</span> tenor trombone, trombone, brass, yellow brass</p>
+                        <p class="tooltip-tags">Tags: tenor trombone, trombone, brass, yellow brass</p>
                     </div>
                 </div>
 
@@ -79,5 +80,20 @@
 
 
 </body>
+    
+    <script>
+        var descriptionsHidden = true;
+        function toggleDescription() {
+            if (descriptionsHidden == true) {
+                // show them
+                document.getElementById("toggle-description").innerHTML = "Hide Image Descriptions";
+                descriptionsHidden = false;
+                document.getElementsByClass("tooltip").style.visibility = "visible";
+            } else {
+                // hide them
+                document.getElementById("togle-description").innerHTML = "Show Image Descriptions";
+                descriptionsHidden = true;
+                document.getElementsByClass("tooltip").style.visibility = "hidden";
+            }
 
 </html>
