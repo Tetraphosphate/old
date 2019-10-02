@@ -6,8 +6,8 @@
 }
 
 .tooltip > p {
-    color: white;
-    background-color: #33333399
+    color: black;
+    background-color: #ffffffcc;
 }
 
 .item-wrapper .tooltip {
