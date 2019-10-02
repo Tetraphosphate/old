@@ -1,6 +1,10 @@
 .item-wrapper {
-    width: 200px;
-    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    justify-content: space-evenly;
 }
 
 img .picture {
