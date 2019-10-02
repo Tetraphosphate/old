@@ -28,6 +28,10 @@ h1 {
     margin-bottom: 5px;
 }
 
+p {
+    margin-bottom: 5px;
+}
+
 .page {
     display: flex;
     flex-flow: column;
