@@ -4,8 +4,6 @@
 }
 
 .gallery {
-    
-    
     justify-content: center;
     flex-flow: row wrap;
 }
