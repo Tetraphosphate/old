@@ -5,6 +5,11 @@
     line-height: 140%;
 }
 
+.tooltip > p {
+    color: white;
+    background-color: #33333399
+}
+
 .item-wrapper .tooltip {
     visibility: hidden;
     position: absolute;
