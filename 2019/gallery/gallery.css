@@ -33,21 +33,21 @@ h1 {
 }
 
 p {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .page {
     display: flex;
     flex-flow: column;
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .section {
     margin: auto;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .gallery-wrapper {
