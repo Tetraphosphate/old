@@ -5,6 +5,18 @@
     line-height: 140%;
 }
 
+.tag {
+    margin-left: 7px;
+    margin-right: 7px;
+    color: #f04937;
+    text-decoration: underline;
+}
+
+.tag:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
 .bold {
     font-weight: bold;
 }
