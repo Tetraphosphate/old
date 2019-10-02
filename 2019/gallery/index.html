@@ -82,18 +82,27 @@
 </body>
     
     <script>
-        var descriptionsHidden = true;
-        function toggleDescription() {
-            if (descriptionsHidden == true) {
-                // show them
-                document.getElementById("toggle-description").innerHTML = "Hide Image Descriptions";
-                descriptionsHidden = false;
-                document.getElementsByClass("tooltip").style.visibility = "visible";
-            } else {
-                // hide them
-                document.getElementById("togle-description").innerHTML = "Show Image Descriptions";
-                descriptionsHidden = true;
-                document.getElementsByClass("tooltip").style.visibility = "hidden";
-            }
+var descriptionsHidden = true;
+var tooltipElements = document.getElementsByClassName("tooltip");
+function toggleDescription() {
+    if (descriptionsHidden == true) {
+        // show them
+        document.getElementById("toggle-description").innerHTML = "Hide Image Descriptions";
+        descriptionsHidden = false;
+        console.log("showing");
+        for (var i = 0; i < tooltipElements.length; i++) {
+            tooltipElements[i].style.visibility = "visible";
+        }
+    } else {
+        // hide them
+        document.getElementById("toggle-description").innerHTML = "Show Image Descriptions";
+        descriptionsHidden = true;
+        console.log("hiding");
+        for (var i = 0; i < tooltipElements.length; i++) {
+            tooltipElements[i].style.visibility = "hidden";
+        }
+    }
+}
+    </script>
 
 </html>
