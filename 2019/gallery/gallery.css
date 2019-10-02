@@ -5,9 +5,17 @@
     line-height: 140%;
 }
 
+p.tooltip-tags {
+    font-size: 80%;
+}
+
+h3.tooltip-title {
+    font-weight: normal;
+}
+
 .tooltip > p {
-    color: black;
     background-color: #ffffffcc;
+    margin: 0;
 }
 
 .item-wrapper .tooltip {
