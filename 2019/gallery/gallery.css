@@ -5,6 +5,16 @@
     line-height: 140%;
 }
 
+#toggle-description {
+    text-decoration: underline;
+    color: #f04937;
+}
+
+#toggle-description:hober {
+    text-decoration: none;
+    color: black;
+}
+
 .tag {
     margin-left: 2px;
     margin-right: 2px;
@@ -14,7 +24,7 @@
 
 .tag:hover {
     text-decoration: none;
-    color: #000000;
+    color: black;
 }
 
 p.tooltip-tags {
