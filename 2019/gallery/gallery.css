@@ -53,6 +53,9 @@ a:visited {
 h1 {
     color: #f04937;
     margin-bottom: 5px;
+}
+
+.pink-highlight {
     background-color: #f9d9c7;
 }
 
