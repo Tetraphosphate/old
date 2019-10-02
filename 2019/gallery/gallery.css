@@ -4,20 +4,26 @@
 }
 
 .gallery {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    flex-basis: 20%;
-    justify-content: space-evenly;
+    
+    
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
 .item-wrapper {
-    width: 200px;
-    height: 200px;
+    display: inline-flex;
     margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    width: 300px;
+    background-color: #333333;
+    height: 300px;
+    align-content: space-around;
 }
 
 img.picture {
     background-color: #6e6e6e;
+    max-width: 300px;
+    max-height: 300px;
+    margin: auto;
 }
