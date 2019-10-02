@@ -5,6 +5,16 @@
     line-height: 140%;
 }
 
+.item-wrapper .tooltip {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+}
+
+.item-wrapper:hover .tooltip {
+    visibility: visible;
+}
+
 .section > .infooter {
     margin-bottom: 20px;
 }
@@ -48,15 +58,15 @@ p {
 .page {
     display: flex;
     flex-flow: column;
-    margin-top: 7%;
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .section {
     margin: auto;
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .gallery-wrapper {
