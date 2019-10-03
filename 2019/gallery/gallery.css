@@ -33,7 +33,7 @@ h3 {
     margin-left: 2px;
     margin-right: 2px;
     color: #f04937;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .tag:hover {
@@ -48,7 +48,7 @@ p.tooltip-tags {
 h3.tooltip-title {
     font-weight: normal;
     color: #f04937;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 h3.tooltip-title:hover {
