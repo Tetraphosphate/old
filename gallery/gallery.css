@@ -20,7 +20,7 @@
     flex-direction: column;
 }
 
-.text-wrapper p {
+.text-wrapper p, .filter-category p {
     margin: 0;
 }
 
@@ -37,10 +37,6 @@
 
 .filter-category p:hover {
     color: var(--colour);
-}
-
-.filter-category p {
-    margin: 0;
 }
 
 .filter-category {
