@@ -20,15 +20,16 @@
     flex-direction: column;
 }
 
-.text-wrapper p, .filter-category p {
+.discord-wrapper p, .filter-category p {
     margin: 0;
 }
 
-.text-wrapper {
+.discord-wrapper {
     margin: auto;
-    border: #7289da 1px solid;
+    color: white;
     border-radius: 8px;
     padding: 10px;
+    background-color: #36393f; /* 4f545c */
 }
 
 #reset-tags:hover {
