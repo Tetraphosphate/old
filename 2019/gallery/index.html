@@ -34,9 +34,13 @@
             
             <div id="filters" class="side">
                 <h3>Filters</h3>
-                <div id="tag-instruments" class="filter-category">
-                    <p>▲ Instruments</p>
-                    <p class="tag-name" onclick="goToTag('tenor-trombone')">> Tenor Trombone</p>
+                <div class="filter-category">
+                    <p onclick="toggle(tag-instruments)">▲ Instruments</p>
+                    <div id="tag-instruments">
+                        <p class="tag-name" onclick="goToTag('tenor-trombone')">> Tenor Trombone</p>
+                        <p class="tag-name" onclick="goToTag('trombone')">> Trombone</p>
+                        <p class="tag-name" onclick="goToTag('trumpet')">> Trumpet</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,6 +113,17 @@
 <script>
 document.getElementById("javascript-required").style.display = "none"; // only show the message if javascript is not supported
 document.getElementById("help").style.display = "none";
+    
+    
+function toggle(element) {
+    element = document.getElementById(element);
+    if (element.style.display === "none") {
+        element.style.display = "block";
+    } else {
+        element.style.display = "none";
+    }
+}
+    
 
 var descriptionsHidden = true;
 var tooltipElements = document.getElementsByClassName("tooltip");
