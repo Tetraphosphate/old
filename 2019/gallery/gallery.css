@@ -5,8 +5,16 @@
     line-height: 140%;
 }
 
+#navigation .linkblock {
+    margin: 0;
+    margin-right: 7px;
+    text-decoration: none;
+}
+
 h3 {
     color: #f04937;
+    font-weight: normal;
+    font-size: 140%;
 }
 
 .tag {
@@ -69,12 +77,12 @@ h3.tooltip-title:hover {
     background-color: #f9d9c7;
 }
 
-a, .fakelink {
+a, .fakelink, .linkblock {
     color: #f04937;
     text-decoration: underline;
 }
 
-a:hover, .fakelink:hover, a:visited:hover {
+a:hover, .fakelink:hover, a:visited:hover, .linkblock:hover {
     color: black;
     text-decoration: none;
 }
