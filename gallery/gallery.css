@@ -16,10 +16,6 @@
     text-decoration: underline;
 }
 
-.discord {
-    flex-direction: column;
-}
-
 .discord-wrapper p, .filter-category p {
     margin: 0;
 }
