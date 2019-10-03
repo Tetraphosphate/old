@@ -5,10 +5,6 @@
     line-height: 140%;
 }
 
-.pink-text {
-    color: #f04937;
-}
-
 .filter-category p {
     margin: 0;
 }
@@ -111,6 +107,10 @@ h1 {
 
 .pink-highlight {
     background-color: #f0493733;
+}
+
+.pink-text {
+    color: #f04937;
 }
 
 p {
