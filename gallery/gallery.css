@@ -5,6 +5,25 @@
     line-height: 140%;
 }
 
+#invite {
+    color: #7289da;
+}
+
+.discord {
+    flex-direction: column;
+}
+
+.text-wrapper p {
+    margin: 0;
+}
+
+.text-wrapper {
+    margin: auto;
+    border: #7289da 1px solid;
+    border-radius: 8px;
+    padding: 10px;
+}
+
 #reset-tags:hover {
     color: #f04937;
 }
