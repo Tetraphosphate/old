@@ -5,10 +5,6 @@
     line-height: 140%;
 }
 
-#tag-instruments, #tag-colours {
-    display: none;
-}
-
 .filter-category p {
     margin: 0;
 }
