@@ -5,12 +5,12 @@
     line-height: 140%;
 }
 
-#toggle-description {
+.navigation p {
     text-decoration: underline;
     color: #f04937;
 }
 
-#toggle-description:hover {
+.navigation p:hover {
     text-decoration: none;
     color: black;
 }
