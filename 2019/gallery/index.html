@@ -143,17 +143,18 @@ document.getElementById("tag-other").style.display = "none";
     
 function toggle(element) {
     var parent = element.substr(4);
+    var highlight = element + "-highlight";
     element = document.getElementById(element);
     if (element.style.display === "none") {
         // show it
         element.style.display = "block";
         document.getElementById(parent).innerHTML = "↑ " + document.getElementById(parent).innerHTML.substr(2);
-        document.getElementById(element + "-highlight").classList.add("pink-text");
+        document.getElementById(highlight).classList.add("pink-text");
     } else {
         // hide it
         element.style.display = "none";
         document.getElementById(parent).innerHTML = "↓ " + document.getElementById(parent).innerHTML.substr(2);
-        document.getElementById(element + "-highlight").classList.remove("pink-text");
+        document.getElementById(highlight).classList.remove("pink-text");
     }
 }
     
