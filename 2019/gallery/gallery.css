@@ -5,6 +5,10 @@
     line-height: 140%;
 }
 
+.filter-category p:hover {
+    color: #f04937;
+}
+
 .filter-category p {
     margin: 0;
 }
