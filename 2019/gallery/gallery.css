@@ -5,8 +5,11 @@
     line-height: 140%;
 }
 
-.tag-name {
-    line-height: 71%;
+.filter-category > p {
+    margin: 0;
+}
+.filter-category {
+    margin-bottom: 15px;
 }
 
 #navigation .linkblock {
