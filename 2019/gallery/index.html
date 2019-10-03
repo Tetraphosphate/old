@@ -36,7 +36,7 @@
                 <h3>Filters</h3>
                 
                 <div class="filter-category">
-                    <p id="instruments" onclick="toggle('tag-instruments')">↓ Instruments</p>
+                    <p id="instruments" onclick="toggle('tag-instruments')">↓ <span id="instruments-highlight">Instruments</span></p>
                     <div id="tag-instruments" class="filter-list">
                         <p class="tag-name" onclick="goToTag('tenor-trombone')">> Tenor Trombone</p>
                         <p class="tag-name" onclick="goToTag('trombone')">> Trombone</p>
@@ -45,21 +45,21 @@
                 </div>
                 
                 <div class="filter-category">
-                    <p id="colours" onclick="toggle('tag-colours')">↓ Colour/Material</p>
+                    <p id="colours" onclick="toggle('tag-colours')">↓ <span id="colours-highlight">Colour/Material</span></p>
                     <div id="tag-colours" class="filter-list">
                         <p class="tag-name" onclick="goToTag('yellow-brass')">> Yellow Brass</p>
                     </div>
                 </div>
                 
                 <div class="filter-category">
-                    <p id="types" onclick="toggle('tag-types')">↓ Instrument Family</p>
+                    <p id="types" onclick="toggle('tag-types')">↓ <span id="types-highlight">Instrument Family</span></p>
                     <div id="tag-types" class="filter-list">
                         <p class="tag-name" onclick="goToTag('brass')">> Brass</p>
                     </div>
                 </div>
                 
                 <div class="filter-category">
-                    <p id="other" onclick="toggle('tag-other')">↓ Other Tags</p>
+                    <p id="other" onclick="toggle('tag-other')">↓ <span id="other-highlight">Other Tags</span></p>
                     <div id="tag-other" class="filter-list">
                         <p class="tag-name" onclick="goToTag('fire')">> Fire</p>
                     </div>
@@ -148,10 +148,12 @@ function toggle(element) {
         // show it
         element.style.display = "block";
         document.getElementById(parent).innerHTML = "↑ " + document.getElementById(parent).innerHTML.substr(2);
+        document.getElementById(element + "-highlight").classList.add("pink-text");
     } else {
         // hide it
         element.style.display = "none";
         document.getElementById(parent).innerHTML = "↓ " + document.getElementById(parent).innerHTML.substr(2);
+        document.getElementById(element + "-highlight").classList.remove("pink-text");
     }
 }
     
