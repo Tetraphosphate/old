@@ -22,7 +22,7 @@
                 <p id="javascript-required">> This website uses JavaScript. If you can see this sentence, your browser does not support JavaScript and some features of this site may not work properly.</p>
             </div>
             <div id="help" class="paragraph">
-                <h3>Show Help</h3>
+                <h3>Help</h3>
                 <p>> Hover over an image (or tap, on a mobile device) to view more details. Or click on "Show/Hide Image Descriptions" to show or hide them all.</p>
                 <p>> Clicking on the name of an image will open it in a new tab.</p>
                 <p>> Clicking on one of the tags will show all images with that tag.</p>
@@ -33,47 +33,44 @@
             <div class="gallery">
                 
                 
-                <div class="item-wrapper">
-                    <img src="../../../../perm-resources/images/gallery/flamethrower-tenor.png"
-                         class="picture tenor-trombone trombone brass fire yellow-brass">
+                <div class="item-wrapper tenor-trombone trombone brass fire yellow-brass">
+                    <img src="../../../../perm-resources/images/gallery/flamethrower-tenor.png" class="picture">
                     <div class="tooltip">
                         <h3 class="tooltip-title" onclick="goTo('flamethrower-tenor')">Flamethrower Tenor</h3>
                         <p class="tooltip-description">> A firey trombone.</p>
                         <p class="tooltip-tags">Tags:
-                            <span class="tag">tenor-trombone</span>
-                            <span class="tag">trombone</span>
-                            <span class="tag">brass</span>
-                            <span class="tag">fire</span>
-                            <span class="tag">yellow-brass</span>
+                            <span class="tag" onclick="goToTag("tenor-trombone")">tenor-trombone</span>
+                            <span class="tag" onclick="goToTag("trombone")">trombone</span>
+                            <span class="tag" onclick="goToTag("brass")">brass</span>
+                            <span class="tag" onclick="goToTag("fire")">fire</span>
+                            <span class="tag" onclick="goToTag("yellow-brass")">yellow-brass</span>
                         </p>
                     </div>
                 </div>
                 
-                <div class="item-wrapper">
-                    <img src="../../../../perm-resources/images/gallery/tenor-trombone.png"
-                         class="picture tenor-trombone trombone brass yellow-brass">
+                <div class="item-wrapper tenor-trombone trombone brass yellow-brass">
+                    <img src="../../../../perm-resources/images/gallery/tenor-trombone.png" class="picture">
                     <div class="tooltip">
                         <h3 class="tooltip-title" onclick="goTo('tenor-trombone')">Tenor Trombone</h3>
                         <p class="tooltip-description">> The original trombone sprite.</p>
                         <p class="tooltip-tags">Tags:
-                            <span class="tag">tenor-trombone</span>
-                            <span class="tag">trombone</span>
-                            <span class="tag">brass</span>
-                            <span class="tag">yellow-brass</span>
+                            <span class="tag" onclick="goToTag("tenor-trombone")">tenor-trombone</span>
+                            <span class="tag" onclick="goToTag("trombone")">trombone</span>
+                            <span class="tag" onclick="goToTag("brass")">brass</span>
+                            <span class="tag" onclick="goToTag("yellow-brass")">yellow-brass</span>
                         </p>
                     </div>
                 </div>
                 
-                <div class="item-wrapper">
-                    <img src="../../../../perm-resources/images/gallery/trumpet.png"
-                         class="picture trumpet brass yellow-brass">
+                <div class="item-wrapper" trumpet brass yellow-brass>
+                    <img src="../../../../perm-resources/images/gallery/trumpet.png" class="picture">
                     <div class="tooltip">
                         <h3 class="tooltip-title" onclick="goTo('trumpet')">Trumpet</h3>
                         <p class="tooltip-description">> Just your everyday Bb trumpet.</p>
                         <p class="tooltip-tags">Tags:
-                            <span class="tag">trumpet</span>
-                            <span class="tag">brass</span>
-                            <span class="tag">yellow brass</span>
+                            <span class="tag" onclick="goToTag("trumpet")">trumpet</span>
+                            <span class="tag" onclick="goToTag("brass")">brass</span>
+                            <span class="tag" onclick="goToTag("yellow-brass")">yellow brass</span>
                         </p>
                     </div>
                 </div>
@@ -140,6 +137,18 @@ function toggleHelp() {
 function goTo(imageName) {
     window.open(("https://tetraphosphate.github.io/perm-resources/images/gallery/" + imageName + ".png"), "_blank");
 }
+var allItems = document.getElementsByClassName("item-wrapper");
+function goToTag(tagName) {
+    for (var i = 0; i < allItems.length; i++) {
+        // for each item on the page,
+        if (allItems[i].classList.contains(tagName)) {
+            // show if it has that class
+            allItems[i].style.display = "flex";
+        } else {
+            // otherwise hide it
+            allItems[i].style.display = "none";
+        }
+    }
 </script>
 
 </html>
