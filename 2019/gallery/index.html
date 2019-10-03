@@ -34,7 +34,9 @@
             
             <div id="filters" class="side">
                 <h3 onclick="toggleFilters()">Filters</h3>
+                <p>Click on a tag to view images tagged with that tag.</p>
                 <p>Selected: <span id="selected">None</span></p>
+                <p id="reset-tags" onclick="resetTags()">Reset Tags</p>
                 <div class="filter-category">
                     <p id="instruments" onclick="toggle('tag-instruments')">↓ Instruments</p>
                     <div id="tag-instruments" class="filter-list">
@@ -67,6 +69,12 @@
                 
             </div>
         </div>
+        
+        
+        <div id="floating-nav">
+            
+        </div>
+        
         
         <div class="gallery-wrapper">
             <div class="gallery">
@@ -230,6 +238,14 @@ function goToTag(tagName) {
         }
     }
     document.getElementById("selected").innerHTML = tagName;
+}
+
+function resetTags() {
+    // show all items
+    document.getElementById("selected").innerHTML = "None";
+    for (var i = 0; i < allItems.length; i++) {
+        allItems[i].style.display = "flex";
+    }
 }
     
 </script>
