@@ -17,15 +17,33 @@
             <p id="navigation">
                 <span id="toggle-description" class="linkblock" onclick="toggleDescription()">Show Image Descriptions</span>
                 <span id="toggle-help" class="linkblock" onclick="toggleHelp()">Help</span>
-                <span id="toggle-filters" class="linkblock" onclick="toggleFilters()">Filters</span>
                 <span id="toggle-about" class="linkblock" onclick="toggleAbout()">About Me</span>
+                <span id="toggle-filters" class="linkblock" onclick="toggleFilters()">Filters</span>
             </p>
             
             <div id="welcome" class="paragraph">
                 <p id="javascript-required">> This website uses JavaScript. If you can see this sentence, your browser does not support JavaScript and some features of this site may not work properly.</p>
             </div>
+            
+            <div id="help" class="paragraph">
+                <h3 onclick="toggleHelp()">Help (and other info)</h3>
+                <p>> Hover over an image (or tap, on a mobile device) to view more details. Or click on "Show/Hide Image Descriptions" to show or hide them all.</p>
+                <p>> Clicking on the name of an image will open it in a new tab.</p>
+                <p>> Clicking on one of the tags will show all images with that tag.</p>
+                <p>> This site is entirely cookie free, but not bug free. If you find any bugs or glitches please let me know! (contact info under "About Me")</p>
+            </div>
+            
+            <div id="about" class="paragraph">
+                <h3 onclick="toggleAbout()">About Me</h3>
+                <p>> Hi, I'm Janice! Welcome to my art gallery, I post my pixel art here, and I've kinda run out of things to say now sooooo yeah</p>
+                <p>> The art here is posted in chronological order, with the most recent at the top. I'll add more art periodically so be sure to check back often.</p>
+                <p>> The artworks on this website are licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Click on the link to find out more.</p>
+                <p>> Contact: I'm Tetraphosphate#0670 on Discord, or email me at janice dot c dot chung at gmail dot com, replacing "dot" and "at" with . and @ respectively.</p>
+            </div>
+            
+        </div>
 
-            <div id="filters" class="side">
+        <div id="filters" class="side">
                 <h3 onclick="toggleFilters()">Filters</h3>
                 <p>Click on a tag to view images tagged with that tag.</p>
                 <p>> Selected: <span id="selected">none</span></p>
@@ -62,25 +80,6 @@
                 
                 <p id="reset-tags" onclick="resetTags()">> Reset Filters</p>
             </div>
-            
-            <div id="help" class="paragraph">
-                <h3 onclick="toggleHelp()">Help (and other info)</h3>
-                <p>> Hover over an image (or tap, on a mobile device) to view more details. Or click on "Show/Hide Image Descriptions" to show or hide them all.</p>
-                <p>> Clicking on the name of an image will open it in a new tab.</p>
-                <p>> Clicking on one of the tags will show all images with that tag.</p>
-                <p>> This site doesn't use cookies but you're welcome to buy me one to eat ;)</p>
-            </div>
-            
-            <div id="about" class="paragraph">
-                <h3 onclick="toggleAbout()">About Me</h3>
-                <p>> Hi, I'm Janice! Welcome to my art gallery, I post my pixel art here, and I've kinda run out of things to say now sooooo yeah</p>
-                <p>> The art here is posted in chronological order, with the most recent at the top. I'll add more art periodically so be sure to check back often.</p>
-                <p>> The artworks on this website are licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Click on the link to find out more.</p>
-            </div>
-            
-        </div>
-
-        
         
         <div class="gallery-wrapper">
             <div class="gallery">
@@ -108,7 +107,7 @@
                 </div>
                 
                 <div class="item-wrapper trombone tenor-trombone brass silver">
-                    <img src="../../../perm-resources/images/gallery/trumpet.png" class="picture">
+                    <img src="../../../perm-resources/images/gallery/silver-transparent-tenor-trombone.png" class="picture">
                     <div class="tooltip">
                         <h3 class="tooltip-title" onclick="goTo('silver-transparent-tenor-trombone')">Silver Plated Tenor Trombone</h3>
                         <p class="tooltip-description">> Parts of this image are transparent, to make it look like it's reflecting it's surroundings. Try downloading and pasting it onto a colourful background.</p>
