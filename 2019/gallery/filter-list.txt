@@ -1,0 +1,13 @@
+INSTRUMENTS
+x tenor-trombone
+x trombone
+x trumpet
+
+COLOURS
+x yellow-brass
+
+TYPES
+x brass
+
+OTHER
+x fire
