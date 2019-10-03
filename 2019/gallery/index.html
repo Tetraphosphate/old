@@ -34,34 +34,34 @@
             
             <div id="filters" class="side">
                 <h3 onclick="toggleFilters()">Filters</h3>
-                
+                <p>Selected: <span id="selected">None</span></p>
                 <div class="filter-category">
                     <p id="instruments" onclick="toggle('tag-instruments')">↓ Instruments</p>
                     <div id="tag-instruments" class="filter-list">
-                        <p class="tag-name" onclick="goToTag('tenor-trombone')">> Tenor Trombone</p>
-                        <p class="tag-name" onclick="goToTag('trombone')">> Trombone</p>
-                        <p class="tag-name" onclick="goToTag('trumpet')">> Trumpet</p>
+                        <p class="tag-name" onclick="goToTag('tenor-trombone')">> tenor-trombone</p>
+                        <p class="tag-name" onclick="goToTag('trombone')">> trombone</p>
+                        <p class="tag-name" onclick="goToTag('trumpet')">> trumpet</p>
                     </div>
                 </div>
                 
                 <div class="filter-category">
                     <p id="colours" onclick="toggle('tag-colours')">↓ Colour/Material</p>
                     <div id="tag-colours" class="filter-list">
-                        <p class="tag-name" onclick="goToTag('yellow-brass')">> Yellow Brass</p>
+                        <p class="tag-name" onclick="goToTag('yellow-brass')">> yellow-brass</p>
                     </div>
                 </div>
                 
                 <div class="filter-category">
                     <p id="types" onclick="toggle('tag-types')">↓ Instrument Family</p>
                     <div id="tag-types" class="filter-list">
-                        <p class="tag-name" onclick="goToTag('brass')">> Brass</p>
+                        <p class="tag-name" onclick="goToTag('brass')">> brass</p>
                     </div>
                 </div>
                 
                 <div class="filter-category">
                     <p id="other" onclick="toggle('tag-other')">↓ Other Tags</p>
                     <div id="tag-other" class="filter-list">
-                        <p class="tag-name" onclick="goToTag('fire')">> Fire</p>
+                        <p class="tag-name" onclick="goToTag('fire')">> fire</p>
                     </div>
                 </div>
                 
@@ -78,11 +78,11 @@
                         <h3 class="tooltip-title" onclick="goTo('flamethrower-tenor')">Flamethrower Tenor</h3>
                         <p class="tooltip-description">> A firey trombone.</p>
                         <p class="tooltip-tags">Tags:
-                            <span class="tag" onclick="goToTag('tenor-trombone')">Tenor Trombone</span>
-                            <span class="tag" onclick="goToTag('trombone')">Trombone</span>
-                            <span class="tag" onclick="goToTag('brass')">Brass</span>
-                            <span class="tag" onclick="goToTag('fire')">Fire</span>
-                            <span class="tag" onclick="goToTag('yellow-brass')">Yellow Brass</span>
+                            <span class="tag" onclick="goToTag('tenor-trombone')">tenor-trombone</span>
+                            <span class="tag" onclick="goToTag('trombone')">trombone</span>
+                            <span class="tag" onclick="goToTag('brass')">brass</span>
+                            <span class="tag" onclick="goToTag('fire')">fire</span>
+                            <span class="tag" onclick="goToTag('yellow-brass')">yellow-brass</span>
                         </p>
                     </div>
                 </div>
@@ -217,6 +217,7 @@ function goTo(imageName) {
 
 
 var allItems = document.getElementsByClassName("item-wrapper");
+
 function goToTag(tagName) {
     for (var i = 0; i < allItems.length; i++) {
         // for each item on the page,
@@ -228,6 +229,7 @@ function goToTag(tagName) {
             allItems[i].style.display = "none";
         }
     }
+    document.getElementById("selected").innerHTML = tagName;
 }
     
 </script>
