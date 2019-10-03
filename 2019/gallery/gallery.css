@@ -5,6 +5,10 @@
     line-height: 140%;
 }
 
+.tag-name {
+    line-height: 71%;
+}
+
 #navigation .linkblock {
     margin: 0;
     margin-right: 7px;
