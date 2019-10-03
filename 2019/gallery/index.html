@@ -17,14 +17,14 @@
             <h1 id="page-title"><span class="pink-highlight">Tetraphosphate's Art Gallery</span></h1>
             <p id="navigation">
                 <span id="toggle-description" class="linkblock" onclick="toggleDescription()">Show Image Descriptions</span>
-                <span id="toggle-help" class="linkblock" onclick="toggleHelp()">Help</span>
+                <span id="toggle-help" class="linkblock" onclick="toggleHelp()">Show Help</span>
             </p>
             <div id="welcome" class="paragraph">
                 <p>> Welcome to my collection of pixel art. I'm working on a search system, but for the meantime you'll just have to scroll through until you find the thing you're looking for.</p>
                 <p id="javascript-required">> This website uses JavaScript. If you can see this sentence, your browser does not support JavaScript and some features of this site may not work properly.</p>
             </div>
             <div id="help" class="paragraph">
-                <h3>Help</h3>
+                <h3>Show Help</h3>
                 <p>> Hover over an image (or tap, on a mobile device) to view more details. Or click on "Show/Hide Image Descriptions" to show or hide them all.</p>
                 <p>> Clicking on the name of an image will open it in a new tab.</p>
                 <p>> Clicking on one of the tags will show all images with that tag.</p>
@@ -127,10 +127,12 @@ var helpHidden = true;
 function toggleHelp() {
     if (helpHidden == true) {
         // show it
+        document.getElementById("toggle-help").innerHTML = "Hide Help";
         document.getElementById("help").style.display = "block";
         helpHidden = false;
     } else {
         // hide it
+        document.getElementById("toggle-help").innerHTML = "Show Help";
         document.getElementById("help").style.display = "none";
         helpHidden = true;
     }
