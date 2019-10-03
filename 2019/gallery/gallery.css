@@ -33,13 +33,6 @@ p.tooltip-tags {
 
 h3.tooltip-title {
     font-weight: normal;
-    color: #f04937;
-    text-decoration: underline;
-}
-
-h3.tooltip-title:hover {
-    color: black;
-    text-decoration: none;
 }
 
 .tooltip > p {
@@ -59,7 +52,7 @@ h3.tooltip-title:hover {
 }
 
 .section > .infooter {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .infooter {
@@ -91,7 +84,7 @@ a:visited {
 
 h1 {
     color: #f04937;
-    margin-bottom: 5px;
+    margin-bottom: 10%;
 }
 
 .pink-highlight {
@@ -114,6 +107,7 @@ p {
     margin: auto;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 10%;
 }
 
 .gallery-wrapper {
@@ -128,8 +122,6 @@ p {
     justify-content: flex-start;
     align-content: flex-start;
     flex-direction: row;
-    border-left: #cccccc 1px solid;
-    border-right: #cccccc 1px solid;
 }
 
 .item-wrapper {
