@@ -233,19 +233,19 @@ function toggleFilters() {
    
     
 var aboutHidden = true;
-    function toggleAbout() {
-        if (aboutHidden == true) {
-            // show it
-            document.getElementById("toggle-about").innerHTML = "Hide About Me";
-            document.getElementById("about").style.display = "block";
-            aboutHidden = false;
-        } else {
-            // hide it
-            document.getElementById("toggle-about").innerHTML = "About Me";
-            document.getElementById("about").style.display = "none";
-            aboutHidden = true;
-        }
+function toggleAbout() {
+    if (aboutHidden == true) {
+        // show it
+        document.getElementById("toggle-about").innerHTML = "Hide About Me";
+        document.getElementById("about").style.display = "block";
+        aboutHidden = false;
+    } else {
+        // hide it
+        document.getElementById("toggle-about").innerHTML = "About Me";
+        document.getElementById("about").style.display = "none";
+        aboutHidden = true;
     }
+}
     
 
 function goTo(imageName) {
