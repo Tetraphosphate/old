@@ -131,11 +131,11 @@ function toggle(element) {
     if (element.style.display === "none") {
         // show it
         element.style.display = "block";
-        document.getElementById(parent).innerHTML = "↑ " + document.getElementById(parent).innerHTML;
+        document.getElementById(parent).innerHTML = "↑ " + document.getElementById(parent).innerHTML.substr(2);
     } else {
         // hide it
         element.style.display = "none";
-        document.getElementById(parent).innerHTML = "↓ " + document.getElementById(parent).innerHTML;
+        document.getElementById(parent).innerHTML = "↓ " + document.getElementById(parent).innerHTML.substr(2);
     }
 }
     
