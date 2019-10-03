@@ -145,6 +145,21 @@ function toggleHelp() {
     }
 }
     
+var filtersHidden = true;
+function toggleFilters() {
+    if (helpHidden == true) {
+        // show them
+        document.getElementById("toggle-filters").innerHTML = "Hide Filters";
+        document.getElementById("filters").style.display = "block";
+        filtersHidden = false;
+    } else {
+        // hide them
+        document.getElementById("toggle-filters").innerHTML = "Show Filters";
+        document.getElementById("filters").style.display = "none";
+        filtersHidden = true;
+    }
+}
+    
 
 function goTo(imageName) {
     window.open(("https://tetraphosphate.github.io/perm-resources/images/gallery/" + imageName + ".png"), "_blank");
