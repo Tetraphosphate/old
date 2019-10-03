@@ -1,3 +1,9 @@
+:root {
+    --colour: #f04937;
+    --highlight: #f0493733;
+    --default-size: 300px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -25,11 +31,11 @@
 }
 
 #reset-tags:hover {
-    color: #f04937;
+    color: var(--colour);
 }
 
 .filter-category p:hover {
-    color: #f04937;
+    color: var(--colour);
 }
 
 .filter-category p {
@@ -47,7 +53,7 @@
 }
 
 h3 {
-    color: #f04937;
+    color: var(--colour);
     font-weight: normal;
     font-size: 140%;
 }
@@ -55,7 +61,7 @@ h3 {
 .tag {
     margin-left: 2px;
     margin-right: 2px;
-    color: #f04937;
+    color: var(--colour);
     text-decoration: none;
 }
 
@@ -70,7 +76,7 @@ p.tooltip-tags {
 
 h3.tooltip-title {
     font-weight: normal;
-    color: #f04937;
+    color: var(--colour);
     text-decoration: underline;
     background-color: #ffffffcc;
 }
@@ -83,7 +89,7 @@ h3.tooltip-title:hover {
 .tooltip > p {
     background-color: #ffffffcc;
     margin: 0;
-    max-width: 300px;
+    max-width: var(--default-size);
 }
 
 .item-wrapper .tooltip {
@@ -105,20 +111,20 @@ h3.tooltip-title:hover {
     bottom: 15px;
     display: flex;
     flex-flow: row wrap;
-    color: #f04937;
+    color: var(--colour);
     line-height: 100%;
 }
 
 .linkblock {
     margin-left: 7px;
     margin-right: 7px;
-    background-color: #f0493733;
-    color: #f04937;
+    background-color: var(--highlight);
+    color: var(--colour);
     text-decoration: none;
 }
 
 a, .fakelink {
-    color: #f04937;
+    color: var(--colour);
     text-decoration: underline;
 }
 
@@ -132,16 +138,16 @@ a:visited {
 }
 
 h1 {
-    color: #f04937;
+    color: var(--colour);
     margin-bottom: 10%;
 }
 
 .pink-highlight {
-    background-color: #f0493733;
+    background-color: var(--highliht);
 }
 
 .pink-text {
-    color: #f04937;
+    color: var(--colour);
 }
 
 p {
@@ -182,14 +188,14 @@ p {
     margin: auto;
     justify-content: flex-start;
     align-content: space-around;
-    width: 300px;
-    height: 300px;
+    width: var(--default-size);
+    height: var(--default-size);
     padding: 10px;
 }
 
 img.picture {
     display: block;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: var(--default-size);
+    max-height: var(--default-size);
     margin: auto;
 }
