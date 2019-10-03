@@ -5,6 +5,10 @@
     line-height: 140%;
 }
 
+.filter-list {
+    display: none;
+}
+
 .filter-category p {
     margin: 0;
 }
