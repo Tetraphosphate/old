@@ -5,7 +5,11 @@
     line-height: 140%;
 }
 
-#reset-tags:hover, .filter-category p:hover {
+#reset-tags:hover {
+    color: #f04937;
+}
+
+.filter-category p:hover {
     color: #f04937;
 }
 
@@ -19,7 +23,7 @@
 
 #navigation .linkblock {
     margin: 0;
-    margin-right: 7px;
+    margin-right: 15px;
     background-color: transparent;
 }
 
