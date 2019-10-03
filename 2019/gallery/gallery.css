@@ -33,6 +33,13 @@ p.tooltip-tags {
 
 h3.tooltip-title {
     font-weight: normal;
+    color: #f04937;
+    text-decoration: underline;
+}
+
+h3.tooltip-title:hover {
+    color: black;
+    text-decoration: none;
 }
 
 .tooltip > p {
