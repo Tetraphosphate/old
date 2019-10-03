@@ -16,8 +16,8 @@
             
             <p id="navigation">
                 <span id="toggle-description" class="linkblock" onclick="toggleDescription()">Show Image Descriptions</span>
-                <span id="toggle-help" class="linkblock" onclick="toggleHelp()">Show Help</span>
-                <span id="toggle-filters" class="linkblock" onclick="toggleFilters()">Show Filters</span>
+                <span id="toggle-help" class="linkblock" onclick="toggleHelp()">Help</span>
+                <span id="toggle-filters" class="linkblock" onclick="toggleFilters()">Filters</span>
             </p>
             
             <div id="welcome" class="paragraph">
@@ -155,7 +155,7 @@ function toggleHelp() {
         helpHidden = false;
     } else {
         // hide it
-        document.getElementById("toggle-help").innerHTML = "Show Help";
+        document.getElementById("toggle-help").innerHTML = "Help";
         document.getElementById("help").style.display = "none";
         helpHidden = true;
     }
@@ -170,7 +170,7 @@ function toggleFilters() {
         filtersHidden = false;
     } else {
         // hide them
-        document.getElementById("toggle-filters").innerHTML = "Show Filters";
+        document.getElementById("toggle-filters").innerHTML = "Filters";
         document.getElementById("filters").style.display = "none";
         filtersHidden = true;
     }
