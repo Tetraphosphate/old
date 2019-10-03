@@ -5,7 +5,7 @@
     line-height: 140%;
 }
 
-.filter-list {
+#tag-instruments, #tag-colours {
     display: none;
 }
 
