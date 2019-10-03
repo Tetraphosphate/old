@@ -35,8 +35,8 @@
             <div id="filters" class="side">
                 <h3>Filters</h3>
                 <div class="filter-category">
-                    <p onclick="toggle('tag-instruments')">▲ Instruments</p>
-                    <div id="tag-instruments">
+                    <p id="instruments" onclick="toggle('tag-instruments')">↑ Instruments</p>
+                    <div id="tag-instruments" class="filter-list">
                         <p class="tag-name" onclick="goToTag('tenor-trombone')">> Tenor Trombone</p>
                         <p class="tag-name" onclick="goToTag('trombone')">> Trombone</p>
                         <p class="tag-name" onclick="goToTag('trumpet')">> Trumpet</p>
@@ -117,11 +117,16 @@ document.getElementById("filters").style.display = "none";
     
     
 function toggle(element) {
+    var parent = element.substr(4);
     element = document.getElementById(element);
     if (element.style.display === "none") {
+        // show it
         element.style.display = "block";
+        document.getElementById(parent).innerHTML = "↑ " + document.getElementById(parent).innerHTML;
     } else {
+        // hide it
         element.style.display = "none";
+        document.getElementById(parent).innerHTML = "↓ " + document.getElementById(parent).innerHTML;
     }
 }
     
