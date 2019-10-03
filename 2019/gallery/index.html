@@ -143,7 +143,7 @@ document.getElementById("tag-other").style.display = "none";
     
 function toggle(element) {
     var parent = element.substr(4);
-    var highlight = element + "-highlight";
+    var highlight = parent + "-highlight";
     element = document.getElementById(element);
     if (element.style.display === "none") {
         // show it
