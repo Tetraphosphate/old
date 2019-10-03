@@ -48,7 +48,7 @@ p.tooltip-tags {
 h3.tooltip-title {
     font-weight: normal;
     color: #f04937;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 h3.tooltip-title:hover {
