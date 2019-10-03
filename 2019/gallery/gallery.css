@@ -9,16 +9,6 @@ h3 {
     color: #f04937;
 }
 
-.navigation p {
-    text-decoration: underline;
-    color: #f04937;
-}
-
-.navigation p:hover {
-    text-decoration: none;
-    color: black;
-}
-
 .tag {
     margin-left: 2px;
     margin-right: 2px;
