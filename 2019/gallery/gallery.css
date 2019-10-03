@@ -81,6 +81,8 @@ h3.tooltip-title:hover {
 }
 
 .infooter {
+    position: fixed;
+    bottom: 15px;
     display: flex;
     flex-flow: row wrap;
     color: #f04937;
