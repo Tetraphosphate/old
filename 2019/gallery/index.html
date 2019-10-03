@@ -14,9 +14,21 @@
     <div class="page">
     
         <div class="section">
-            <h1><span class="pink-highlight">Tetraphosphate's Art Gallery</span></h1>
-            <p>> Welcome to my collection of pixel art. Hover over an image (or tap if you're on a phone) for more details. I'm working on a search system, but for the meantime you'll just have to scroll through until you find the thing you're looking for.</p>
-            <p><span id="toggle-description" onclick="toggleDescription()">Show Image Descriptions</span></p>
+            <h1 id="page-title"><span class="pink-highlight">Tetraphosphate's Art Gallery</span></h1>
+            <p id="navigation">
+                <span id="toggle-description" onclick="toggleDescription()">Show Image Descriptions</span>
+                <span id="toggle-help" onclick="toggleHelp()">Help</span>
+            </p>
+            <div id="welcome" class="paragraph">
+                <p>> Welcome to my collection of pixel art. I'm working on a search system, but for the meantime you'll just have to scroll through until you find the thing you're looking for.</p>
+            </div>
+            <div id="help" class="paragraph">
+                <h3>Help</h3>
+                <p>> This website uses JavaScript. If your browser does not support JavaScript, some features may not work properly.</p>
+                <p>> Hover over an image (or tap, on a mobile device) to view more details. Or click on "Show/Hide Image Descriptions" to show or hide them all.</p>
+                <p>> Clicking on the name of an image will open it in a new tab.</p>
+                <p>> Clicking on one of the tags will show all images with that tag.</p>
+            </div>
         </div>
         
         <div class="gallery-wrapper">
@@ -108,6 +120,10 @@ function toggleDescription() {
             tooltipElements[i].style.visibility = "";
         }
     }
+}
+
+function goTo(imageName) {
+    window.open(("https://tetraphosphate.github.io/perm-resources/images/gallery/" + imageName + ".png"), "_blank");
 }
     </script>
 
