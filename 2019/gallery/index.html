@@ -35,7 +35,7 @@
             <div id="filters" class="side">
                 <h3 onclick="toggleFilters()">Filters</h3>
                 <p>Click on a tag to view images tagged with that tag.</p>
-                <p>Selected: <span id="selected">None</span></p>
+                <p>Selected: <span id="selected">none</span></p>
                 <p id="reset-tags" onclick="resetTags()">Reset Tags</p>
                 <div class="filter-category">
                     <p id="instruments" onclick="toggle('tag-instruments')">↓ Instruments</p>
@@ -242,7 +242,7 @@ function goToTag(tagName) {
 
 function resetTags() {
     // show all items
-    document.getElementById("selected").innerHTML = "None";
+    document.getElementById("selected").innerHTML = "none";
     for (var i = 0; i < allItems.length; i++) {
         allItems[i].style.display = "flex";
     }
