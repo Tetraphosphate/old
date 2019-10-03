@@ -28,8 +28,9 @@
     margin: auto;
     color: white;
     border-radius: 8px;
+    border: #36393f 1px solid;
     padding: 10px;
-    background-color: #36393f; /* 4f545c */
+    background-color: white;
 }
 
 #reset-tags:hover {
