@@ -8,7 +8,7 @@
 #navigation .linkblock {
     margin: 0;
     margin-right: 7px;
-    text-decoration: none;
+    background-color: transparent;
 }
 
 h3 {
