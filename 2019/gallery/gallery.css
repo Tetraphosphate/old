@@ -5,6 +5,10 @@
     line-height: 140%;
 }
 
+h3 {
+    color: #f04937;
+}
+
 .navigation p {
     text-decoration: underline;
     color: #f04937;
