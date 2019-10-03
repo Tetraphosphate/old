@@ -59,8 +59,9 @@
                 <div class="filter-category">
                     <p id="colours" onclick="toggle('tag-colours')">↓ Colour/Material</p>
                     <div id="tag-colours" class="filter-list">
+                        <p class="tag-name" onclick="goToTag('red')">> red</p>
+                        <p class="tag-name" onclick="goToTag('silver')">> silver</p>
                         <p class="tag-name" onclick="goToTag('yellow-brass')">> yellow-brass</p>
-                        <p class="tag-name" onclick="goToTag('silver')">> yellow-brass</p>
                     </div>
                 </div>
                 
@@ -68,6 +69,13 @@
                     <p id="types" onclick="toggle('tag-types')">↓ Instrument Family</p>
                     <div id="tag-types" class="filter-list">
                         <p class="tag-name" onclick="goToTag('brass')">> brass</p>
+                    </div>
+                </div>
+            
+                <div class="filter-category">
+                    <p id="brands" onclick="toggle('tag-brands')">↓ Brands</p>
+                    <div id="tag-brands" class="filter-list">
+                        <p class="tag-name" onclick="goToTag('pbone')">> pbone</p>
                     </div>
                 </div>
                 
@@ -88,6 +96,23 @@
                     <div class="discord-wrapper">
                         <p><a href="https://discord.gg/uhbADMj" id="invite">https://discord.gg/uhbADMj</a></p>
                         <p>> Join my discord server! Request art and/or share your own creations. Or just chill out and meet some new friends :)</p>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="item-wrapper tenor-trombone trombone brass pbone red">
+                    <img src="../../../perm-resources/images/gallery/red-pbone.png" class="picture">
+                    <div class="tooltip">
+                        <h3 class="tooltip-title" onclick="goTo('red-pbone')">Red pBone</h3>
+                        <p class="tooltip-description">> A red plastic tenor trombone.</p>
+                        <p class="tooltip-tags">Tags:
+                            <span class="tag" onclick="goToTag('tenor-trombone')">tenor-trombone</span>
+                            <span class="tag" onclick="goToTag('trombone')">trombone</span>
+                            <span class="tag" onclick="goToTag('brass')">brass</span>
+                            <span class="tag" onclick="goToTag('pbone')">pbone</span>
+                            <span class="tag" onclick="goToTag('red')">red</span>
+                        </p>
                     </div>
                 </div>
                 
@@ -172,6 +197,7 @@ document.getElementById("about").style.display = "none";
 document.getElementById("tag-instruments").style.display = "none";
 document.getElementById("tag-colours").style.display = "none";
 document.getElementById("tag-types").style.display = "none";
+document.getElementById("tag-brands").style.display = "none";
 document.getElementById("tag-other").style.display = "none";
     
 function toggle(element) {
