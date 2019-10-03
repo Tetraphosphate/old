@@ -99,9 +99,9 @@
     </div>
 </body>
     
-    <script>
-// document.getElementById("javascript-required").style.display = "none";
-
+<script>
+document.getElementById("javascript-required").style.display = "none"; // only show the message if javascript is not supported
+document.getElementById("help").style.display = "none";
 
 var descriptionsHidden = true;
 var tooltipElements = document.getElementsByClassName("tooltip");
@@ -110,7 +110,6 @@ function toggleDescription() {
         // show them
         document.getElementById("toggle-description").innerHTML = "Hide Image Descriptions";
         descriptionsHidden = false;
-        console.log("showing");
         for (var i = 0; i < tooltipElements.length; i++) {
             tooltipElements[i].style.visibility = "visible";
         }
@@ -118,16 +117,29 @@ function toggleDescription() {
         // hide them
         document.getElementById("toggle-description").innerHTML = "Show Image Descriptions";
         descriptionsHidden = true;
-        console.log("hiding");
         for (var i = 0; i < tooltipElements.length; i++) {
             tooltipElements[i].style.visibility = "";
         }
     }
 }
+        
+var helpHidden = true;
+function toggleHelp() {
+    if (helpHidden == true) {
+        // show it
+        document.getElementById("help").style.display = "block";
+        helpHidden = false;
+    } else {
+        // hide it
+        document.getElementById("help").style.display = "none";
+        helpHidden = true;
+    }
+}
+    
 
 function goTo(imageName) {
     window.open(("https://tetraphosphate.github.io/perm-resources/images/gallery/" + imageName + ".png"), "_blank");
 }
-    </script>
+</script>
 
 </html>
