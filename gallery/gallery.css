@@ -12,8 +12,14 @@
 }
 
 #invite {
-    color: #7289da;
+    color: #ffffff;
     text-decoration: underline;
+    font-size: 170%;
+}
+
+#invite:hover, #invite:visited:hover {
+    color: black;
+    text-decoration: none;
 }
 
 .discord-wrapper p, .filter-category p {
@@ -22,10 +28,13 @@
 
 .discord-wrapper {
     margin: auto;
-    color: black;
+    color: #000000;
     border-radius: 8px;
-    border: #36393f 1px solid;
+    border: #36393f 2px solid;
     padding: 10px;
+    background-color: #7289da; /* 36393f*/
+    max-width: --default-size;
+    max-height: --default-size;
 }
 
 #reset-tags:hover {
