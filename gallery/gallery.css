@@ -10,6 +10,11 @@
     line-height: 140%;
 }
 
+.transparent >.background {
+    background-image: linear-gradient(50deg, #ffffff 33%, #f0493766 33%, #f0493766 67%, #ffffff 67%);
+    border-radius: 8px;
+}
+
 #invite {
     color: #ffffff;
     text-decoration: underline;
@@ -254,7 +259,7 @@ p {
     padding: 10px;
 }
 
-img.picture {
+.background, img.picture {
     display: block;
     max-width: var(--default-size);
     max-height: var(--default-size);
