@@ -107,7 +107,215 @@ h3.tooltip-title:hover {
 
 .section > .infooter {
     margin-bottom: 0px;
+}:root {
+    --colour: #f04937;
+    --highlight: #f0493733;
+    --default-size: 300px;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inconsolata", monospace;
+    line-height: 140%;
+}
+
+#invite {
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 170%;
+}
+
+#invite:hover, #invite:visited:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.discord-wrapper p, .filter-category p {
+    margin: 0;
+}
+
+.discord-wrapper {
+    margin: auto;
+    color: #000000;
+    border-radius: 8px;
+    border: #36393f 2px solid;
+    padding: 10px;
+    background-color: #7289da; /* 36393f*/
+    max-width: --default-size;
+    max-height: --default-size;
+}
+
+#reset-tags:hover {
+    color: var(--colour);
+}
+
+.filter-category p:hover {
+    color: var(--colour);
+}
+
+.filter-category {
+    margin-bottom: 15px;
+}
+
+#navigation .linkblock {
+    margin: 0;
+    margin-right: 15px;
+    background-color: transparent;
+}
+
+h3 {
+    color: var(--colour);
+    font-weight: normal;
+    font-size: 140%;
+}
+
+.tag {
+    margin-left: 2px;
+    margin-right: 2px;
+    color: var(--colour);
+    text-decoration: none;
+}
+
+.tag:hover {
+    text-decoration: none;
+    color: black;
+}
+
+p.tooltip-tags {
+    font-size: 80%;
+}
+
+h3.tooltip-title {
+    font-weight: normal;
+    color: var(--colour);
+    text-decoration: underline;
+    background-color: #ffffffcc;
+}
+
+h3.tooltip-title:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.tooltip > p {
+    background-color: #ffffffcc;
+    margin: 0;
+    max-width: var(--default-size);
+}
+
+.item-wrapper .tooltip {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+}
+
+.item-wrapper:hover .tooltip {
+    visibility: visible;
+}
+
+.footer {
+    margin-bottom: 0px;
+    position: fixed;
+    bottom: 15px;
+    display: flex;
+    width: 100%;
+    
+}
+
+.infooter {
+    display: flex;
+    flex-flow: row wrap;
+    color: var(--colour);
+    line-height: 100%;
+    margin: auto;
+}
+
+.linkblock {
+    margin-left: 7px;
+    margin-right: 7px;
+    background-color: var(--highlight);
+    color: var(--colour);
+    text-decoration: none;
+}
+
+a, .fakelink {
+    color: var(--colour);
+    text-decoration: underline;
+}
+
+a:hover, .fakelink:hover, a:visited:hover, .linkblock:hover {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+h1 {
+    color: var(--colour);
+    margin-bottom: 10%;
+}
+
+.pink-highlight {
+    background-color: var(--highlight);
+}
+
+.pink-text {
+    color: var(--colour);
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.page {
+    display: flex;
+    flex-flow: column;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.section {
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.gallery-wrapper {
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.gallery {
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+}
+
+.item-wrapper {
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+    align-content: space-around;
+    width: var(--default-size);
+    height: var(--default-size);
+    padding: 10px;
+}
+
+img.picture {
+    display: block;
+    max-width: var(--default-size);
+    max-height: var(--default-size);
+    margin: auto;
+}
+
 
 .infooter {
     position: fixed;
