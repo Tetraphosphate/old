@@ -185,7 +185,7 @@ p {
         bottom: 15px;
         display: flex;
         width: 100%;
-        
+        z-index: 2;
     }
     
     .infooter {
