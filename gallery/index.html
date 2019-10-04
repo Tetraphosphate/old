@@ -48,6 +48,7 @@
             <div class="filter-category">
                 <p id="instruments" onclick="toggle('tag-instruments')">↓ Instruments</p>
                 <div id="tag-instruments" class="filter-list">
+                    <p class="tag-name" onclick="goTotag('cimbasso')">> cimbasso</p>
                     <p class="tag-name" onclick="goToTag('alto-trombone')">> alto-trombone</p>
                     <p class="tag-name" onclick="goToTag('tenor-trombone')">> tenor-trombone</p>
                     <p class="tag-name" onclick="goToTag('trombone')">> trombone</p>
@@ -100,8 +101,37 @@
         <div class="gallery-wrapper">
             <div class="gallery">
                 
+
+                <div class="item-wrapper cimbasso brass yellow-brass real">
+                    <img src="../../../perm-resources/images/gallery/cimbasso.png" class="picture">
+                    <div class="tooltip">
+                        <h3 class="tooltip-title" onclick="goTo('cimbasso')">Cimbasso</h3>
+                        <p class="tooltip-description">> I'm not too happy with this; might make a better version later.</p>
+                        <p class="tooltip-tags">Tags:
+                            <span class="tag" onclick="goToTag('cimbasso')">cimbasso</span>
+                            <span class="tag" onclick="goToTag('brass')">brass</span>
+                            <span class="tag" onclick="goToTag('yellow-brass')">yellow-brass</span>
+                            <span class="tag" onclick="goToTag('real')">real</span>
+                        </p>
+                    </div>
+                </div>
                 
-                
+                <div class="item-wrapper alto-trombone trombone brass pbone pbone-mini blue real">
+                    <img src="../../../perm-resources/images/gallery/blue-pbone-mini.png" class="picture">
+                    <div class="tooltip">
+                        <h3 class="tooltip-title" onclick="goTo('blue-pbone-mini')">Blue pBone Mini</h3>
+                        <p class="tooltip-description">> A blue plastic alto trombone.</p>
+                        <p class="tooltip-tags">Tags:
+                            <span class="tag" onclick="goToTag('alto-trombone')">alto-trombone</span>
+                            <span class="tag" onclick="goToTag('trombone')">trombone</span>
+                            <span class="tag" onclick="goToTag('brass')">brass</span>
+                            <span class="tag" onclick="goToTag('pbone')">pbone</span>
+                            <span class="tag" onclick="goToTag('pbone-mini')">pbone-mini</span>
+                            <span class="tag" onclick="goToTag('blue')">blue</span>
+                            <span class="tag" onclick="goToTag('real')">real</span>
+                        </p>
+                    </div>
+                </div>
                 
                 <div class="item-wrapper tenor-trombone trombone brass pbone blue real">
                     <img src="../../../perm-resources/images/gallery/blue-pbone.png" class="picture">
